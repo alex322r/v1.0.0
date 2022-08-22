@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&display=swap');
-* { font-family: 'Source Code Pro', monospace;}
+* { font-family: 'Source Code Pro', monospace;
+ 
+}
 
 body{
   width: 100vw;
@@ -13,52 +15,155 @@ body{
 header{
   width: 100%;
   height: 15%;
+  position: relative;
   
 }
+img{
+  position: absolute;
+  top:10px;
+}
+
 main {
   display: flex;
   width: 100%;
   height: 80%;
   margin-left:80px;
   margin-bottom:50px;
-  background: blue;
+  
+  
   
 }
 footer {
   width: 100%;
   height: 5%;
-  background: red;
+  background: black;
+  padding-right:80px;
+  
+  text-align: center;
+  color:white;
+  
+
 }
 .input-texto{
+  color:white;
   background: #292b36;
-  border:none;
-  outline: none;
+  border: none;
+  outline:none;
   position: absolute;
-  width: 680px;
+  text-align: center;
+  width: 500px;
   height: 288px;
-  left: 240px;
-  top: 168px;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 32px;
-  line-height: 150%;
+  left: 80px;
+  top:80px;
+  border-radius:4px;
   
 }
 .botones {
   display:flex;
-  flex-direction: row;
-  align-items: flex-start;
-  gap:24px;
-  position: absolute;
-  width: 680px;
-  height: 67px;
-  left: 240px;
-  top: 885px;
+  position:absolute;
+  top:380px;
+  left:190px;
+  width:400px;
+  gap:50px
   
+}
+.btnencriptar, .btndesencriptar {
+  width: 120px;
+  height: 40px;
+  background: #292b36;
+  border:none;
+  color:white;
+  border-radius: 4px;
+}
+.btnencriptar:active, .btndesencriptar:active{
+  background: white;
+  color:#292b36;
+}
+.btn-copiar {
+  display: none;
+  width:120px;
+  height: 40px;
+  margin-top: 10px;
+  color: white;
+  background: #292b36;
+  border: none;
+  border-radius:4px;
+  
+  
+  
+  margin-top:2px;
+}
+.btn-copiar:active{
+  background: white;
+  color:#292b36;
+}
+  
+.mensaje-caja{
+  display:flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 336px;
+  height: 275px;
+  position:absolute;
+  top:88px;
+  left: 650px;
+  align-items: center;
+  
+  
+  
+  
+}
+.mensaje{
+  width: 336px;
+  
+  
+  border:none;
+  outline: none;
+  border-radius:4px;
+  color:white;
+  background-image: url(imagenes/muñeco.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  
+  
+  
+  margin-bottom: 15px;
+  text-align: center;
+  
+  
+  
+}
+.mensaje-caja p {
+  color:white;
+  background: transparent;
+  border:none;
+  border-radius:4px;
+  
+  margin:0px;
+  padding-bottom: 0px;
 
 }
 
-.mensaje {
-  background-image: url(images/Muñeco.png);
+.p-top{
+  font-size: 18px;
+  text-align: center;
+}
+.p-bottom{
+  font-size: 10px;
+  text-align: left;
+  padding-left: 58px;
 }
 
+/*version mobil
+
+@media only screen and (max-width: 480px){
+  header{
+    width: 100%;
+    height: 5%;
+  }
+  main{
+    margin-left: 5px;
+  
+  
+  }
